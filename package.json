@@ -1,13 +1,29 @@
 {
+  "name": "notebook-",
+  "version": "1.0.0",
+  "description": "This is a \"note taker\" application using Express.js back end to save and retrieve note data from a JSON file.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SarahLabrotLientz/NOTEBOOK-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SarahLabrotLientz/NOTEBOOK-/issues"
+  },
+  "homepage": "https://github.com/SarahLabrotLientz/NOTEBOOK-#readme",
+  "devDependencies": {
+    "express": "^4.17.2"
+  },
   "dependencies": {
     "crypto": "^1.0.1",
-    "express": "^4.17.2"
-  
-},
-
-
-  "scripts": {
-    "start": "node index",
-    "dev": "nodemon index"
+    "nodemon": "^2.0.15"
   }
 }
