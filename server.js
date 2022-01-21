@@ -1,7 +1,7 @@
 // Call all dependencies
 
 const express = require('express');
-const path = require('path');
+// not sure if i need this--> const path = require('path');
 
 const htmlroutes= require('./routes/htmroutes');
 const api = require('./routes/index.js');
