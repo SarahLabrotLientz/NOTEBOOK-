@@ -1,5 +1,13 @@
 {
   "dependencies": {
+    "crypto": "^1.0.1",
     "express": "^4.17.2"
+  
+},
+
+
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
   }
 }
