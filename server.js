@@ -22,5 +22,5 @@ app.use('/api', api)
 
 // As all is set, now listen for requests
 app.listen(PORT, () =>
-  console.log(`Note Taker App is listening at http://localhost:${PORT}`)
+  console.log(`NoteBook App is listening at http://localhost:${PORT}`)
 );
