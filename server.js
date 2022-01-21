@@ -1,7 +1,9 @@
+// Call all dependencies
+
 const express = require('express');
 const path = require('path');
 
-const { clog } = require('./middleware/clog');
+const htmlroutes= require('./routes/htmroutes');
 const api = require('./routes/index.js');
 
 const PORT = process.env.PORT || 3001;
@@ -9,7 +11,7 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 // Middleware 
-app.use(clog);
+app.use("/", htmlroutes);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
