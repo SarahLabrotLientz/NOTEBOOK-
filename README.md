@@ -22,6 +22,5 @@ I'm meeting with a fellow classmate today to discuss his implimentation of clog 
 
 
 
+![Screenshot](sspage.png)
 
-
-![Screenshot]
