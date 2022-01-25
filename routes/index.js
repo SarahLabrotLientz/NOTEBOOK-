@@ -2,8 +2,8 @@ const   notes           = require('express').Router();
 const   {v4: uuidv4}    = require("uuid");
 const   db            = require("../db/db");
 
-function errorSend (errCd, msg, res) 
-    {res.status(errCd).send(msg); console.log(msg);}
+// function errorSend (errCd, msg, res) 
+//     {res.status(errCd).send(msg); console.log(msg);}
 
 // GET route
 notes.get('/notes', (req, res) => {
@@ -41,7 +41,7 @@ notes.delete('/notes/:id', (req, res) => {
     if (!req.params.id) 
         {errorSend(400, "No ID sent", res); return}
 
-    dbio.deleteId(req.params.id)
+    db.deleteId(req.params.id)
         .then((err) => {
             if (err) {errorSend(500, "Delete Error: " + err, res)} 
             else {
